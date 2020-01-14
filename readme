@@ -1,0 +1,6 @@
+O projeto Agent1 cria um ambiente de interação entre um mundo 
+com um agente (o Agent0) e um cliente utilizando sockets.
+
+Para correr o programa deve executar-se o main.py (servidor) e
+ depois o client.py ou client_threads.py como exemplos de clientes.
+
