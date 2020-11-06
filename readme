@@ -1,6 +1,19 @@
 O projeto Agent1 cria um ambiente de interação entre um mundo 
 com um agente (o Agent0) e um cliente utilizando sockets.
 
+Nesta versão, os agentes percorrem o mundo marcando-os, impedindo o outro agente
+de usar os caminhos já utilizados por outro agente.
+
+Esta é uma versão experimental de uma proposta de um jogo com dois agentes para
+testar os algoritmos MINMAX e Alpha-Beta Pruning.
+
+Nota: Os agentes deslocam-se de forma diferente em relação ao modelo Agent0. Porquê?
+Por cada jogada, é enviado para cada um dos agentes informação sobre o estado do mundo. Isto
+significa que o agente não tem uma visão local do mundo mas global. Logo, não faz sentido movimentar-se
+para a frente e virar. 
+Neste caso o agente movimenta-se norte, sul, este, oeste e mantém sempre a sua posição, facilitando
+assim a implementação do jogo.
+
 Para correr o programa deve executar-se o main.py (servidor) e
  depois o client.py ou client_threads.py como exemplos de clientes.
 
