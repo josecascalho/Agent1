@@ -304,7 +304,7 @@ def main():
         host, port = sys.argv[1], int(sys.argv[2])
     else:
         host = '127.0.0.1'
-        port = 50001
+        port = 50000
     # Size of the world ...
     print("Starting the Game Board")
     gameboard_file = '..//input_files/gameboard_file.txt'
